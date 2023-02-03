@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 const response = await axios.post("https://moviebooking-app.onrender.com",data);
-cosole.log(response.data);
+console.log(response);
 root.render(
 <BrowserRouter>
 <Provider store={store}>
