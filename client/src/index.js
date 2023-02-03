@@ -11,7 +11,8 @@ import { store } from './store';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
-axios.defaults.baseURL= "https://moviebooking-app.onrender.com";
+const response = await axios.post("https://moviebooking-app.onrender.com",data);
+cosole.log(response.data);
 root.render(
 <BrowserRouter>
 <Provider store={store}>
