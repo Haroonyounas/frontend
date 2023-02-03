@@ -11,7 +11,7 @@ import { store } from './store';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
-axios.defaults.baseURL= "http://localhost:8000/";
+axios.defaults.baseURL= "https://moviebooking-app.onrender.com";
 root.render(
 <BrowserRouter>
 <Provider store={store}>
